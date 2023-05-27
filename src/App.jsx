@@ -21,6 +21,12 @@ function App() {
       <Header></Header>
       <div className="px-6 h-full">
         <form className="pt-8 mx-auto w-full max-w-4xl" onSubmit={() => {}}>
+          <p>Nama</p>
+          <input className="mb-[10px]" name="name" type="text" />
+          <p>Alamat</p>
+          <input className="mb-[10px]" name="address" type="text" />
+          <p>Nomor KK</p>
+          <input className="mb-[10px]" name="identity" type="number" />
           <p>Email</p>
           <input
             className="mb-[10px]"
@@ -30,6 +36,13 @@ function App() {
             onChange={onChange}
           />
           <p>Password</p>
+          <input
+            className="mb-[10px]"
+            name="password"
+            type="password"
+            value={form.password}
+          />
+          <p>Konfirmasi Password</p>
           <input
             className="mb-[10px]"
             name="password"
